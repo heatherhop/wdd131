@@ -38,6 +38,16 @@ header {
     padding: 1rem;
 }
 
+.navigation a {
+    text-decoration: none;
+    color: white;
+
+}
+ .navigation a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+ }
+
 main {
     display: grid;
     grid-column: 1 / 4;
