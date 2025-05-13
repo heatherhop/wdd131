@@ -43,10 +43,11 @@ header {
     color: white;
 
 }
- .navigation a:hover {
+
+.navigation a:hover {
     text-decoration: underline;
     cursor: pointer;
- }
+}
 
 main {
     display: grid;

@@ -4,12 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Heather Hopkins</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals home page for Heather Hopkins">
+    <meta name="author" content="Heather Hopkins">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Roboto:ital@0;1&display=swap"
+        rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>WDD - Heather Hopkins</h1>
-    <p>This is the test for publishing.</p>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Heather Hopkins</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://www.linkedin.com/in/heather-hopkins-7b834a35b/"
+                        title="LinkedIn Profile Page">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" title="Canvas Dashboard">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/ot/isa/40?lang=eng&id=p31#p31"
+                        title="Favorite Scripture Link">Scripture</a></li>
+                <li><a href="#" title="Final Project Link">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card left">
+            <h2>About Me</h2>
+            <img src="images/profile.webp" width="150" alt="image of woman and page owner">
+            <p>My name is Heather Hopkins. I live in northern Utah. I am the mother of 7 children and they are my
+                everything. I enjoy being active and the outdoors. I love the beach and the mountains. I love to travel,
+                see the world and adventure. I am an online student at Pathway World Wide.</p>
+
+            <section class="state">
+                <h3>Utah, USA</h3>
+                <img src="images/flag.webp" width="200" alt="image of Utah State flag">
+                <p>Utah is known as the "Beehive State," and is in Mountain West region of the United States. It's the
+                    45th state, joining the Union on January 4, 1896. The capital and largest city is Salt Lake City.
+                    Utah is known for its
+                    diverse geography, including the Great Salt Lake, the Wasatch Mountains, and many incredible
+                    national parks.
+                </p>
+            </section>
+        </section>
+        <section class="card right">
+            <h2>Web Dev Resources</h2>
+            <ul class="web">
+                <li><a href="https://css-tricks.com/" title="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" title="_blank">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/" title="_blank">Udemy</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/" title="_blank">MDN</a></li>
+                <li><a href="https://www.codecademy.com/" title="_blank">Codecademy</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p id="currentYear"><span></span></p>
+        <p id="lastModified"><span></span></p>
+    </footer>
 </body>
 
 </html>
