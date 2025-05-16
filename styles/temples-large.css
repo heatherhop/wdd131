@@ -1,13 +1,13 @@
 @media screen and (min-width: 500px) {
-    main section {
+    main div {
         grid-template-columns: auto auto auto;
     }
 
-    .navigation {
+    .navigation ul {
         display: flex;
     }
 
-    .navigation li {
+    .navigation ul li {
         display: block;
         flex: 1 1 100%;
     }
