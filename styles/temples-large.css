@@ -3,11 +3,11 @@
         grid-template-columns: auto auto auto;
     }
 
-    .navigation ul {
+    .navigation {
         display: flex;
     }
 
-    .navigation ul li {
+    .navigation li {
         display: block;
         flex: 1 1 100%;
     }
