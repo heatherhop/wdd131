@@ -11,10 +11,10 @@ header,
 footer,
 main,
 main div {
-    max-width: 800px;
+    max-width: 700px;
     margin: auto;
     padding: 1rem;
-    border: 2px solid lightseagreen;
+    /* border: 2px solid lightseagreen; */
 }
 
 header,
@@ -40,13 +40,12 @@ main div {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     place-items: center;
     grid-gap: 1rem;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     width: auto;
-
 }
 
 figure {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     text-align: center;
     font-size: 12px;
 }
@@ -64,7 +63,7 @@ figure {
 
 #menu.show::before {
     /* #menu.open::before */
-    content: 'ⅹ';
+    content: "X";
 }
 
 .show li {
@@ -74,7 +73,7 @@ figure {
 header p {
     font-size: xx-large;
     font-weight: 700;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .navigation {
@@ -85,14 +84,14 @@ header p {
 .navigation li {
     display: none;
     padding: 1rem;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
 
 .navigation a {
     display: block;
     text-decoration: none;
     color: whitesmoke;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     transition: 0.5s;
 }
 
