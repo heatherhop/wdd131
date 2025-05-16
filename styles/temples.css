@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header,
+footer,
+main,
+main section {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+    border: 2px solid lightseagreen;
+}
+
+header,
+footer {
+    color: whitesmoke;
+    background-color: #253959;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 
+main {
+    max-width: 800px;
+    margin: 0 auto;
+} */
+
+main h1 {
+    font-size: large;
+    text-align: center;
+}
+
+main section {
+    display: grid;
+    /* grid-template-columns: auto; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
+    grid-gap: 1rem;
+    border: 2px solid pink;
+    width: auto;
+
+}
+
+figure {
+    border: 2px solid red;
+    text-align: center;
+    font-size: x-small;
+}
+
+#menu {
+    display: block;
+    color: whitesmoke;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    /* #menu.open::before */
+    content: 'ⅹ';
+}
+
+.show li {
+    display: block;
+}
+
+header p {
+    font-size: xx-large;
+    font-weight: 700;
+    border: 2px solid blue;
+}
+
+.navigation {
+    list-style: none;
+    margin: 1 auto;
+}
+
+.navigation li {
+    display: none;
+    padding: 1rem;
+    border: 2px solid yellow;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    border: 2px solid purple;
+    transition: 0.5s;
+}
+
+
+.navigation a:hover,
+.navigation a:active {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+
+#lastModified {
+    font-size: xx-small;
+}

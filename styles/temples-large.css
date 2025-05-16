@@ -1,0 +1,18 @@
+@media screen and (min-width: 500px) {
+    main section {
+        grid-template-columns: auto auto auto;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+}
