@@ -6,12 +6,11 @@ currentYear.innerHTML = `©<span>${today.getFullYear()}<span> | Heather Hopkins 
 const lastModified = document.querySelector("#lastModified")
 lastModified.innerHTML = `<span>Last Modification: ${(document.lastModified)}</span>`
 
-const menuHamb = document.querySelector('#menu')
+const menuBtn = document.querySelector('#menu')
 const nav = document.querySelector('.navigation')
 
-menuHamb.addEventListener('click', () => {
+menuBtn.addEventListener('click', () => {
     nav.classList.toggle('show');
-    menuHamb.classList.toggle('show');
-   
+    menuBtn.textContent = nav.classList.contains('show') ? 'X' : '≡';
 });
 

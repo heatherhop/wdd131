@@ -12,7 +12,7 @@ footer,
 main,
 main div {
     max-width: 700px;
-    margin: auto;
+    margin: 1rem auto;
     padding: 1rem;
     /* border: 2px solid lightseagreen; */
 }
@@ -29,8 +29,12 @@ header {
     align-items: center;
 }
 
-main h1 {
-    font-size: large;
+h1 {
+    font-size: 2rem;
+}
+
+main h2 {
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -51,60 +55,45 @@ figure {
 }
 
 #menu {
-    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
     color: whitesmoke;
     font-size: 2rem;
     text-decoration: none;
-}
-
-#menu::before {
-    content: "≡";
-}
-
-#menu.show::before {
-    /* #menu.open::before */
-    content: "X";
+    background-color: #253959;
+    border: none;
 }
 
 .show li {
-    display: block;
-}
-
-header p {
-    font-size: xx-large;
-    font-weight: 700;
-    /* border: 2px solid blue; */
-}
-
-.navigation {
+    display: flex;
     list-style: none;
     margin: auto;
+    flex-direction: column;
+    padding: .5rem;
+    text-decoration: none;
 }
 
-.navigation li {
+li {
     display: none;
-    padding: 1rem;
-    /* border: 2px solid yellow; */
 }
 
 .navigation a {
-    display: block;
+    display: flex;
+    list-style: none;
     text-decoration: none;
     color: whitesmoke;
     /* border: 2px solid purple; */
-    transition: 0.5s;
 }
 
-
-.navigation a:hover,
-.navigation a:active {
+.navigation a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
 footer {
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 2px;
     line-height: 20px;
 }
