@@ -1,0 +1,22 @@
+<!-- <main>
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-large.webp" media="min-width: 1000px">
+            <source srcset="images/hero-medium.webp" media="min-width: 550px">
+            <img src="images/hero-small.webp" alt="Orem Utah Temple" width="400" height="200">
+        </picture>
+    </div>
+</main> -->
+
+<!-- Emmet shorthand (enter syntax + tab):
+main>div.hero>picture>source:media*2+img -->
+
+<main>
+    <div class="hero">
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/hero-large">
+            <source media="(min-width: 550px)" srcset="images/hero-medium">
+            <img src="images/hero-small.webp" alt="Mount Timpanogoes Utah Temple" width="500" height="250">
+        </picture>
+    </div>
+</main>

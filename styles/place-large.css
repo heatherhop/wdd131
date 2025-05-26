@@ -1,0 +1,55 @@
+@media screen and (min-width: 550px) {
+    main {
+        position: relative;
+    }
+
+    .hero {
+        width: 100%;
+        /* height: auto; */
+        /* object-fit: cover; */
+    }
+
+    h2 {
+        background-color: rgba(171, 5, 4, .75);
+        color: #fff;
+        padding: .5rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        margin-top: 0;
+    }
+
+    table {
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .data,
+    .weather {
+        font-size: 12px;
+        border-radius: 5px;
+        position: absolute;
+        background-color: rgba(255, 255, 255, .85);
+    }
+
+    .data {
+        left: 20px;
+        top: 20px;
+    }
+
+    .weather img {
+        display: none;
+    }
+
+    .weather {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .weather h2::after {
+        content: " 🌤️";
+    }
+}

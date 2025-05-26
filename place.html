@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 - W03 Project - Places Page - Heather Hopkins </title>
+    <meta name="description"
+        content="Places assignment to practice concepts for design and development, where the subject is the place I live.">
+    <meta name="author" content="Heather Hopkins">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Utah</h1>
+    </header>
+    <main>
+        <div>
+            <picture class="hero">
+                <source media="(min-width: 1000px)" srcset="images/utah.jpg">
+                <source media="(min-width: 550px)" srcset="images/utah.jpg">
+                <img src="images/utah.jpg" alt="Utah County city and mountains behind" width="500" height="250">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <th>Area:</th>
+                    <td>84,900 square miles</td>
+                </tr>
+                <tr>
+                    <th>Population:</th>
+                    <td>3,440,000</td>
+                </tr>
+                <tr>
+                    <th>Capital:</th>
+                    <td>Salt Lake City</td>
+                </tr>
+                <tr>
+                    <th>Official Language:</th>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <th>Currency:</th>
+                    <td>US Dollars</td>
+                </tr>
+                <tr>
+                    <th>Time Zone:</th>
+                    <td>Mountain Time</td>
+                </tr>
+            </table>    
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="Weather icon">
+            <table>
+                <tr>
+                    <th>Temperature:</th>
+                    <td id="temperature">10 ℉</td>
+                </tr>
+                <tr>
+                    <th>Conditions:</th>
+                    <td>Partly Cloudy</td>
+                </tr>
+                <tr>
+                    <th>Wind:</th>
+                    <td id="windSpeed">5 km/h</td>
+                </tr>
+                <tr>
+                    <th>Wind Chill:</th>
+                    <td id="windChill"><span></span></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p id="currentYear"><span></span></p>
+        <p id="lastModified"><span></span></p>
+    </footer>
+</body>
+
+</html>

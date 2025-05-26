@@ -1,0 +1,19 @@
+.hero img {
+    width: 100%;
+    height: auto;
+}
+/* 
+Or you can use object-fit with set image containers. Just be mindful of the art direction with the responsive results.
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} 
+Another solution is to use the aspect-ratio property.
+You want responsive images to maintain their intrinsic aspect ratio. 
+Alternating the aspect ratio by setting the width AND height to values 
+(including setting the height to relative measure 100%) in order to 
+fill your design space may distort and pixelate the image. 
+Lighthouse will report on major aspect ratio violations. 
+More information about aspect ratios.
+*/
