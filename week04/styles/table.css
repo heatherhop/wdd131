@@ -1,0 +1,60 @@
+:root {
+    --headerback: #000;
+    --headerback2: #333;
+    --zebra: #eee;
+    --headercolor: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Golos Text", sans-serif;
+}
+
+table {
+    width: 500px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 1rem;
+    font-size: small;
+}
+
+thead {
+    background-color: var(--headerback);
+    color: var(--headercolor);
+    font-size: 1.5rem;
+}
+
+thead tr:nth-last-child(1) {
+    background-color: var(--headerback2);
+    font-size: 1.25rem;
+
+}
+
+tbody {
+    font-size: 1.25rem;
+}
+
+td,
+th {
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 1rem;
+}
+
+tr:nth-child(even) {
+    background-color: var(--zebra);
+}
+
+.blank {
+    background-color: var(--headerback);
+}

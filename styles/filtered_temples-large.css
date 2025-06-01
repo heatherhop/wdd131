@@ -1,0 +1,22 @@
+@media screen and (min-width: 500px) {
+    main div {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 0 auto;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        padding: 1rem;
+    }
+
+    #menu {
+        display: none;
+    }
+}

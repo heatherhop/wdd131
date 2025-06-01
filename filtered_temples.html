@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temple Picture Album with Lazy Loading</title>
+    <meta name="description" content="Picture album assignment to practice view responsive page and lazy loading.">
+    <meta name="author" content="Heather Hopkins">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered_temples.css">
+    <link rel="stylesheet" href="styles/filtered_temples-large.css">
+    <script src="scripts/filtered_temples.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu">≡</button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="home" title="Home Page">Home</a></li>
+                <li><a href="#" id="old" title="Old Temples">Old</a></li>
+                <li><a href="#" id="new" title="New Temples">New</a></li>
+                <li><a href="#" id="large" title="Large Temples">Large</a></li>
+                <li><a href="#" id="small" title="Small Temples">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="temple-grid">
+        </div>
+    </main>
+    <footer>
+        <p id="currentYear"><span></span></p>
+        <p id="lastModified"><span></span></p>
+    </footer>
+</body>
+
+</html>
