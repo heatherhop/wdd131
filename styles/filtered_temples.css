@@ -47,7 +47,8 @@ main div {
     width: auto;
 }
 
-h3, p { 
+h3,
+p {
     text-align: center;
 }
 
