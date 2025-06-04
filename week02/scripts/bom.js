@@ -27,6 +27,8 @@ function addChap() {
 
 
 
+
+
 // Instead of (text content) you can use (innerHTML)
 // newChap.textContent = input.value;
 // newChap.innerHTML = input.value;
