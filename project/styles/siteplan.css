@@ -1,0 +1,39 @@
+:root {
+    --primary-color: rgb(61, 90, 128);
+    --secondary-color: rgb(224, 251, 252);
+    --accent-color: rgb(238, 108, 77);
+    --font-color: rgb(255 255 255);
+    --font1: "Roboto";
+    --font2: "Oswald";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", "Oswald", sans-serif;
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    text-align: center;
+}
+
+header,
+footer,
+main {
+    max-width: 700px;
+    padding: 25px;
+}
+
+h1 {
+    font-family: var(--font1);
+}
+
+p {
+    font-family: var(--font2);
+}
