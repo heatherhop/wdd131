@@ -42,15 +42,26 @@ function populateProduct(products) {
         item.setAttribute("value", product.id);
         document.querySelector("#product").appendChild(item);
     }
-)}
+    )
+}
 
 const reviewSubmited = document.querySelector("#submit")
 reviewSubmited.addEventListener("click", () => {
-    reviewSubmit()
-})
-
-function reviewSubmit() {
     let numReviews = Number(window.localStorage.getItem("reviewSubmit")) || 0;
     numReviews++;
     localStorage.setItem("reviewSubmit", numReviews);
-}
+})
+
+
+
+
+// const reviewSubmited = document.querySelector("#submit")
+// reviewSubmited.addEventListener("click", () => {
+//     reviewSubmit()
+// })
+
+// function reviewSubmit() {
+//     let numReviews = Number(window.localStorage.getItem("reviewSubmit")) || 0;
+//     numReviews++;
+//     localStorage.setItem("reviewSubmit", numReviews);
+// }
