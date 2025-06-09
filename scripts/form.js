@@ -46,17 +46,33 @@ function populateProduct(products) {
 }
 
 const reviewSubmited = document.querySelector("#submit")
-reviewSubmited.addEventListener("click", () => {
-    let numReviews = Number(window.localStorage.getItem("reviewSubmit")) || 0;
+reviewSubmited.addEventListener("click", (event) => {
+    event.preventDefault();
+    let numReviews = JSON.parse(window.localStorage.getItem("reviewSubmit")) || 0;
     numReviews++;
-    localStorage.setItem("reviewSubmit", numReviews);
+    localStorage.setItem("reviewSubmit", JSON.stringify(numReviews));
+    reviewForm.reset();
 })
+// const reviewSubmited = document.querySelector("#submit")
+// reviewSubmited.addEventListener("click", (event) => {
+//     event.preventDefault();
+//     let numReviews = Number(window.localStorage.getItem("reviewSubmit")) || 0;
+//     numReviews++;
+//     localStorage.setItem("reviewSubmit", numReviews);
+// })
 
+// const reviewSubmited = document.querySelector("#submit")
+// reviewSubmited.addEventListener("click", (event) => {
+//     event.preventDefault();
+//     localStorage.setItem("reviewSubmit", JSON.stringify(numReviews));
+//     let numReviews = JSON.parse(window.localStorage.getItem("reviewSubmit"));
+//     numReviews++;
+// })
 
 
 
 // const reviewSubmited = document.querySelector("#submit")
-// reviewSubmited.addEventListener("click", () => {
+// reviewSubmited.addEventListener("click", (event) => {
 //     reviewSubmit()
 // })
 
