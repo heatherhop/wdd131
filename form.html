@@ -22,14 +22,14 @@
     </header>
     <main>
         <form action="review.html" method="get" id="reviewForm">
-            <label for="product">Product Name</label>
+            <label for="product">Product Name *</label>
             <div>
                 <select name="product" id="product" required>
                     <option value="" disabled selected>Select a Product...</option>
                 </select>
             </div>
             <br>
-            <label>Overall Rating</label>
+            <label>Overall Rating *</label>
             <div class="overall">
                 <div>
                     <input type="radio" id="fivestar" name="rating" value="5" required>
@@ -53,13 +53,13 @@
                 </div>
             </div>
             <br>
-            <label for="date">Date of Installation</label>
+            <label for="date">Date of Installation *</label>
             <div>
                 <input type="date" id="date" name="date" required>
             </div>
             <br>
             <label>Which features did you find useful in the product?</label>
-            <p>(Check all that apply)</p>
+            <p>(Check all that apply) *</p>
             <div class="features">
                 <div>
                     <input type="checkbox" id="durability" name="features" value="Durability">

@@ -45,14 +45,16 @@ function populateProduct(products) {
     )
 }
 
-const reviewSubmited = document.querySelector("#submit")
-reviewSubmited.addEventListener("click", (event) => {
-    event.preventDefault();
-    let numReviews = JSON.parse(window.localStorage.getItem("reviewSubmit")) || 0;
-    numReviews++;
-    localStorage.setItem("reviewSubmit", JSON.stringify(numReviews));
-    reviewForm.reset();
-})
+// const reviewSubmited = document.getElementById("submit")
+// reviewSubmited.addEventListener("click", (event) => {
+//     event.preventDefault();
+
+
+//     let numReviews = JSON.parse(window.localStorage.getItem("reviewSubmit")) || 0;
+//     numReviews++;
+//     localStorage.setItem("reviewSubmit", JSON.stringify(numReviews));
+//     reviewForm.reset();
+// })
 // const reviewSubmited = document.querySelector("#submit")
 // reviewSubmited.addEventListener("click", (event) => {
 //     event.preventDefault();
@@ -71,13 +73,34 @@ reviewSubmited.addEventListener("click", (event) => {
 
 
 
-// const reviewSubmited = document.querySelector("#submit")
-// reviewSubmited.addEventListener("click", (event) => {
-//     reviewSubmit()
-// })
+const reviewSubmited = document.querySelector("#submit")
+reviewSubmited.addEventListener("click", (event) => {
+    event.preventDefault();
 
-// function reviewSubmit() {
-//     let numReviews = Number(window.localStorage.getItem("reviewSubmit")) || 0;
-//     numReviews++;
-//     localStorage.setItem("reviewSubmit", numReviews);
-// }
+    if (validateForm()) {
+        reviewSubmit();
+    }
+});
+
+function validateForm() {
+    const requiredInputs = document.querySelectorAll('input[required]');
+
+    const allRequiredFilled = Array.from(requiredInputs).every(input => {
+        return input.value.trim() !== '';
+    });
+
+    if (!allRequiredFilled) {
+        alert('Please complete all required fields that are marked with an astrisk (*) before submitting.');
+        return false;
+    }
+    return true;
+}
+
+function reviewSubmit() {
+    let numReviews = Number(window.localStorage.getItem("reviewSubmit")) || 0;
+    numReviews++;
+    localStorage.setItem("reviewSubmit", numReviews);
+    reviewForm.reset();
+    alert("Review subbmitted successfully!");
+    console.log(`Total reviews submitted: ${numReviews}`);
+}
