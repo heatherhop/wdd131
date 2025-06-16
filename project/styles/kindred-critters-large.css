@@ -1,0 +1,61 @@
+@media screen and (min-width: 550px) {
+    main div {
+        margin: auto;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        padding: 1rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .service {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .service section {
+        width: 400px;
+        flex-direction: row;
+        border: 2px solid var(--accent-color);
+        border-radius: 8px;
+        box-shadow: 0 0 10px gray;
+    }
+
+    .service div {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .info section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .info section div {
+        flex-direction: column;
+        border: 2px solid var(--accent-color);
+        border-radius: 8px;
+        box-shadow: 0 0 10px gray;
+    }
+
+    .social {
+        position: absolute;
+        flex-direction: row;
+        top: 2rem;
+        right: 2rem;
+    }
+}
